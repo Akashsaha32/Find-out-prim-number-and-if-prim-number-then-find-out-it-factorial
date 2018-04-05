@@ -10,6 +10,7 @@ int PrimNumber( int x){
     for(int i=2; i<=z; i++){
         if(x%i == 0){
             flag = 1;
+            break;
         }
     }
 
