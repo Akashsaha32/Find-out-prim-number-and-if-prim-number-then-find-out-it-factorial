@@ -17,6 +17,15 @@ int PrimNumber( int x){
 
 }
 
+long long int Factorial(int x){
+    long long int rslt = 1;
+    for(int i=1; i<x; i++){
+        rslt = rslt*(i+1);
+    }
+    return rslt;
+
+}
+
 
 int main()
 {
@@ -27,11 +36,8 @@ int main()
     int flag = PrimNumber(x);
 
 if(flag == 0){
-    long long int rslt = 1;
-    for(int j=1; j<x; j++){
-        rslt = rslt*(j+1);
-        }
-        cout << "The Number is Prim. And\n"<<x << "! = " << rslt;
+    long long int rslt = Factorial(x);
+    cout << "The Number is Prim. And\n"<<x << "! = " << rslt;
 }
 else if(flag == 1){
     cout << "The Number is not Prim.";
